@@ -110,3 +110,7 @@
 .sort-by, .search-bar {
     margin: 5px;
 }
+
+.search-bar-input {
+    width: 600px;
+}
