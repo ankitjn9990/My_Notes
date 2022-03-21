@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My notes</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="toolbar">
+            <form class="form">
+                <label for="note-header">Note Header:</label>
+                <input type="text" name="note-header" id="note-header" oninput="checkInput()" />
+                <label for="note-description">Note Description:</label>
+                <textarea cols="30" rows="10" name="note-description" id="note-description"
+                    oninput="checkInput()"></textarea>
+                <button type="submit" class="submit-button" disabled>Save</button>
+            </form>
+            <div class="sort-by">
+                <!-- <button class="sort-button" onclick="sortNotes()">Sort A - Z</button> -->
+                <select id="sortBy" onChange="sortNotes()">
+                    <option value="header">Sort by Header</option>
+                    <option value="desc">Sort by Description</option>
+                </select>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search restaurant by names or tags.." title="Type in a name">
+            </div>
+        </div>
+        <div style="display: flex;flex-wrap: nowrap;">
+            <div class="notes-container" id="notes-container-area"></div>
+            <div class="preview" id="preview"></div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

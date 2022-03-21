@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.toolbar {
+    display: flex;
+    height: 25vh;
+    border-bottom: 1px solid darkgrey;
+}
+
+.new-button {
+    background-color: green;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border: transparent;
+    border-radius: 3px;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.notes-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 65vw;
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+.preview {
+    width: 35vw;
+    border: 1px solid darkgrey;
+    height: 75vh;
+    padding: 10px;
+}
+
+.form {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.main-note-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.note-id {
+    border: none;
+    width: 14px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: 800;
+}
+
+.delete-note-button {
+    font-size: 9px;
+    background: wheat;
+    border: 1px solid darkgrey;
+    padding: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.note-card {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    width: 20vw;
+    height: 25vh;
+    border: 1px solid #f6f6f6;
+    background-color: rgb(250, 219, 134);
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.active {
+    border: 2px solid black;
+}
+
+.note-card-header {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.note-card-desc {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.submit-button {
+    background-color: grey;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.sort-by, .search-bar {
+    margin: 5px;
+}
